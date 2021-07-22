@@ -16,7 +16,10 @@ function assertArraysEqual(arr1, arr2) {
     console.log("🛑🛑🛑Assertion Failed:");
 }
 
-function without(source,itemtoremove)
+myArray = myArray.filter( function( el ) {
+  return !toRemove.includes( el );
+} );
+/*function without(source,itemtoremove)
 {
   let output = [];
   for (let i = 0, len = itemtoremove.length; i < len; i++) {
@@ -33,7 +36,7 @@ function without(source,itemtoremove)
     
   return output;
 
-}
+}*/
 
 const words = ["hello", "world", "lighthouse"];
 console.log(without(words, ["lighthouse"])); 
