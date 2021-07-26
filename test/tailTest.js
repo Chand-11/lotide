@@ -1,15 +1,8 @@
-const assertEqual = require('./assertEqual');
+const assertEqual = require('../assertEqual');
+const head = require('../tail');
 
-
-function tail(array) {
-  let result = [];
-  for (let i = 1; i < array.length; i++) {
-    result.push(array[i]);
-  }
-  return result;
-};
-
-//  TEST CODE
+//TEST CODE
+ 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 const w = tail(words); // no need to capture the return value since we are not checking it
 assertEqual(w.length, 2); // original array should still have 3 elements!
@@ -24,11 +17,3 @@ assertEqual(result1.length,0);
 
 const result2 = tail([]);
 assertEqual(result2.length,0);
-
-
-
-
-
-
-
-module.exports = tail;
