@@ -9,7 +9,7 @@
 //     console.log("🛑🛑🛑Assertion Failed:" + actual + "!==" + expected);
 // };
 
-function eqArrays(arr1, arr2)
+const eqArrays =function(arr1, arr2)
 {
   if (arr1.length !== arr2.length) return false;
   for (var i = 0, len = arr1.length; i < len; i++){
@@ -18,7 +18,7 @@ function eqArrays(arr1, arr2)
       }
   }
   return true; 
-}
+};
 
 // assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); 
 // assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => true
@@ -27,4 +27,4 @@ function eqArrays(arr1, arr2)
 // assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
 // assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => false
 
- module.exports = eqArrays;
+module.exports = eqArrays ;
