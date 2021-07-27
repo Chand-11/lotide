@@ -1,5 +1,5 @@
 const assertEqual = require('../assertEqual');
-const head = require('../tail');
+const tail = require('../tail');
 
 //TEST CODE
  
